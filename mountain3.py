@@ -3,13 +3,13 @@ import numpy as np
 import time
 import copy
 
-allTasks = ["nopp","meditate","cold","posture","ideas"]
+allTasks = ["nopp","medhof","cold","posture","ideas"]
 
 ### read in data format:
 ### each line is a day with a list of completed tasks
 
 def readIn():
-	fileT = open("testfile.txt","r")
+	fileT = open("realfile.txt","r")
  	
 	fileLines = fileT.readlines()
 
@@ -124,9 +124,9 @@ def displayData():
 def endOfDay():
 	#add accomplished tasks (comment out if not accomplished):
 	accomTasks = []
-	#accomTasks.append("nopp")
-	accomTasks.append("medhof")
-	accomTasks.append("cold")
+	accomTasks.append("nopp")
+	#accomTasks.append("medhof")
+	#accomTasks.append("cold")
 	#accomTasks.append("posture")
 	#accomTasks.append("ideas")
 
